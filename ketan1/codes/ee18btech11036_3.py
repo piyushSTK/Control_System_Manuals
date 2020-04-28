@@ -12,6 +12,10 @@ import matplotlib.pyplot as plt
 import control
 from scipy import signal
 
+#if using termux
+import subprocess
+import shlex
+#end if
 
 k=96
 b=0.69
@@ -48,4 +52,9 @@ plt.semilogx(w, phase)
 plt.ylabel("Phase")
 plt.xlabel("Frequency")
 plt.grid()
-plt.show()
+#if using termux
+plt.savefig('./figs/ee18btech11001/ee18btech11036_3.pdf')
+plt.savefig('./figs/ee18btech11001/ee18btech11036_3.eps')
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11036_3.pdf"))
+#else
+#plt.show()
