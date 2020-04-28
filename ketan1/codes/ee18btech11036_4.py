@@ -12,6 +12,10 @@ import matplotlib.pyplot as plt
 import control
 from scipy import signal
 
+#if using termux
+import subprocess
+import shlex
+#end if
 
 k=96
 num=[k]
@@ -34,5 +38,10 @@ plt.ylabel("Gain")
 plt.xlabel("Frequency")
 plt.grid()
 
-plt.show()
+#if using termux
+plt.savefig('./figs/ee18btech11001/ee18btech11036_4.pdf')
+plt.savefig('./figs/ee18btech11001/ee18btech11036_4.eps')
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11036_4.pdf"))
+#else
+#plt.show()
 
