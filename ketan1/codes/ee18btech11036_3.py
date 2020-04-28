@@ -55,6 +55,6 @@ plt.grid()
 #if using termux
 plt.savefig('./figs/ee18btech11001/ee18btech11036_4.pdf')
 plt.savefig('./figs/ee18btech11001/ee18btech11036_4.eps')
-subprocess.run(shlex.split("termux-open ./figs/ee18btech11036_3.pdf"))
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11036_4.pdf"))
 #else
 #plt.show()
