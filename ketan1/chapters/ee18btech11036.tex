@@ -6,7 +6,7 @@
 G(s) =\frac{K}{s(s+2)(s+4)(s+6)}
 \label{eq:ee18btech11036_system1}
 \end{align}
-Design a lead compensator to yield a $K_v$ = 2 and a phase margin of 30°.
+Design a lead compensator to yield a $K_v$ = 2 and a phase margin of 30\degree.
 \begin{figure}[!ht]
 	\centering
 	\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11036_tik1.tex}}
@@ -33,7 +33,7 @@ Check the phase margin and gain crossover frequency by running the following cod
 codes/ee18btech11036_1.py
 \end{lstlisting}
 \begin{itemize}
-    \item The Phase margin: $19.76^{\circ}$
+    \item The Phase margin: $19.76\degree$
     \item Gain Crossover Frequency:1.469  rad/sec
 \end{itemize}
 The Bode plot of system is as shown,
@@ -44,7 +44,7 @@ The Bode plot of system is as shown,
   \label{fig:ee18btech11036_1}
 \end{figure}
 
-Therefor amount of phase ot be added: 30-19.76=10.24
+Therefor amount of phase to be added: 30-19.76=10.24
 
 
 
@@ -87,12 +87,12 @@ Now we know that from Gain crossover frequency
 \end{align}
 and the phase margin to be added:
 \begin{align}
-\phi =10.24^{\circ}
+\phi =10.24\degree
 \end{align}
-But to compensate for the added magnitude of lead compensator, a correction factor of $10^{\circ}-20^{\circ}$
+But to compensate for the added magnitude of lead compensator, a correction factor of $10\degree-20\degree$
 is added.Hence
 \begin{align}
-\phi =30.24^{\circ}
+\phi =30.24\degree
 \implies \beta=0.33
 \end{align}
 From the bode plot $\omega$ is chosen at which gain of original system is
@@ -127,7 +127,7 @@ G(s)=\frac{96\brak{1+ 0.828s}}{\brak{s}\brak{2+s}\brak{4+s}\brak{6+s}\brak{1+0.2
     \centering
 	\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11036_tik3.tex}}
 \caption{}
-\label{fig:ee18btech11036}
+\label{fig:ee18btech11036_fin}
 \end{figure}
 
 
@@ -137,7 +137,7 @@ Verify your results from the following code:
 codes/ee18btech11036_2.py
 \end{lstlisting}
 \begin{itemize}
-    \item The Phase margin: $29.269^{\circ}$
+    \item The Phase margin: $29.269\degree$
     \item The Gain Crossover Frequency: 2.02 rad/sec
 \end{itemize}
 %
