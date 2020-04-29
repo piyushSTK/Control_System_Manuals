@@ -56,8 +56,8 @@ plt.ylabel("Phase")
 plt.xlabel("Frequency")
 plt.grid()
 #if using termux
-plt.savefig('./figs/ee18btech11001/ee18btech11036_2.pdf')
-plt.savefig('./figs/ee18btech11001/ee18btech11036_2.eps')
+plt.savefig('./figs/ee18btech11036_2.pdf')
+plt.savefig('./figs/ee18btech11036_2.eps')
 subprocess.run(shlex.split("termux-open ./figs/ee18btech11036_2.pdf"))
 #else
 #plt.show()
